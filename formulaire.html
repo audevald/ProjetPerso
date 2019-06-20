@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Réservation</title>
+    <!--js-->
+    <script src="js/jquery.min.js"></script>
+    <!--css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark text-muted">
+    <header class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+        <div class="col-4">
+            <img src="img/logotemp.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-8">
+            <h4 class="text-right">Réservation</h4>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-sm-2 col-sm-8 offset-md-4 col-md-4">
+                <form>
+                    <div class="form-group">
+                        <label for="champDate">Date du repas</label>
+                        <input type="date" class="form-control" id="champDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="champHeure">Heure</label>
+                        <input type="time" class="form-control" id="champHeure">
+                    </div>
+                    <div class="form-group">
+                        <label for="champNbr">Nombre de couverts</label>
+                        <select class="form-control" id="champNbr">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="champNom">Nom</label>
+                        <input type="text" class="form-control" id="champNom">
+                    </div>
+                    <div class="form-group">
+                        <label for="champPrenom">Prénom</label>
+                        <input type="text" class="form-control" id="champPrenom">
+                    </div>
+                    <div class="form-group">
+                        <label for="champTel">Téléphone</label>
+                        <input type="number" class="form-control" id="champTel">
+                    </div>
+                    <div class="form-group">
+                        <label for="champInfo">Informations complémentaires</label>
+                        <textarea class="form-control" id="champInfo" rows="3"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary mb-2">Réserver !</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--js bootstrap-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- script js-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
