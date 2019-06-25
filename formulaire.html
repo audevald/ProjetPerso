@@ -17,56 +17,89 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
-<body class="bg-dark text-muted">
-    <header class="navbar navbar-expand-lg navbar-light bg-light mb-3">
-        <div class="col-4">
-            <img src="img/logotemp.jpg" class="img-fluid" alt="Responsive image">
-        </div>
-        <div class="col-8">
-            <h4 class="text-right">Réservation</h4>
+<body class="bg-light">
+    <header class="navbar navbar-expand-lg navbar-light bg-primary mb-3">
+        <div class="col-12 text-white">
+            <i class="fas fa-utensils"></i>
+            <span class="lead">Réservation</span>
         </div>
     </header>
     <div class="container">
         <div class="row">
             <div class="col-12 offset-sm-2 col-sm-8 offset-md-4 col-md-4">
                 <form>
-                    <div class="form-group">
+
+                    <div class="form-group text-center">
                         <label for="champDate">Date du repas</label>
-                        <input type="date" class="form-control" id="champDate">
+                        <input type="date" class="form-control" id="champDate" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          Default radio
+                        </label>
+                      </div>
+                    <div class="form-group text-center">
                         <label for="champHeure">Heure</label>
-                        <input type="time" class="form-control" id="champHeure">
+                        <input type="time" class="form-control" id="champHeure" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label for="champNbr">Nombre de couverts</label>
-                        <select class="form-control" id="champNbr">
+                        <select class="form-control nbr" id="champNbr" required>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label for="champNom">Nom</label>
-                        <input type="text" class="form-control" id="champNom">
+                        <input type="text" class="form-control" id="champNom" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label for="champPrenom">Prénom</label>
                         <input type="text" class="form-control" id="champPrenom">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label for="champTel">Téléphone</label>
-                        <input type="number" class="form-control" id="champTel">
+                        <input type="number" class="form-control" id="champTel" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label for="champInfo">Informations complémentaires</label>
-                        <textarea class="form-control" id="champInfo" rows="3"></textarea>
+                        <textarea class="form-control" id="champInfo" rows="3"
+                            placeholder="Intérieur, Terrasse, poussette, etc..."></textarea>
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary mb-2">Réserver !</button>
                     </div>
+
                 </form>
             </div>
         </div>

@@ -1,3 +1,38 @@
-select#nbr {
+header div i {
+    font-size : 30px;
+}
+
+input#champDate {
+    width: 165px;
+    margin: auto;
+}
+
+input#champHeure {
+    width: 100px;
+    margin: auto;
+}
+
+select#champNbr {
     width: 80px;
+    margin: auto;
+}
+
+input#champNom {
+    width: 150px;
+    margin: auto;
+}
+
+input#champPrenom {
+    width: 150px;
+    margin: auto;
+}
+
+input#champTel {
+    width: 150px;
+    margin: auto;
+}
+
+textarea#champInfo {
+    width: 250px;
+    margin: auto;
 }
