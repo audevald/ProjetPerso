@@ -36,3 +36,9 @@ textarea#champInfo {
     width: 250px;
     margin: auto;
 }
+
+.erreur{
+	width: 100%;
+	margin: 0 0 0 10px;
+	color: red;
+}
