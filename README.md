@@ -1,6 +1,6 @@
 # Application Réservation
 
-Dans le cadre de ma formation Concepteur Développeur d'application, j'ai développé une PWA de réservation de table en ligne pour les restaurants.
+Dans le cadre de ma formation Concepteur Développeur d'application, j'ai développé une PWA de réservation de tables en ligne pour les restaurants.
 
 ## Découverte de l'application
 
