@@ -4,13 +4,11 @@ class Client implements ORM {
     
     public $id_client;
     public $nom;
-    public $prenom;
     public $tel;
     
-    public function __construct($id_client = null, $nom = null, $prenom = null, $tel = null) {
+    public function __construct($id_client = null, $nom = null, $tel = null) {
         $this->id_client = $id_client;
         $this->nom = $nom;
-        $this->prenom = $prenom;
         $this->tel = $tel;
     }
     
@@ -26,8 +24,7 @@ class Client implements ORM {
         // Persister $this en se basant sur sa PK.
         $db = DBMySQL::getInstance();
         $id_client = $this->id_client ?: 'DEFAULT';
-        $prenom = $this->prenom ?: NULL;
-        $req = "INSERT INTO client VALUES({$id_client}, {$db->esc($this->nom)}, {$db->esc($prenom)}, {$db->esc($this->tel)}) ON DUPLICATE KEY UPDATE nom = {$db->esc($this->nom)}, prenom = {$db->esc($prenom)}, tel = {$db->esc($this->tel)}";
+        $req = "INSERT INTO client VALUES({$id_client}, {$db->esc($this->nom)}, {$db->esc($this->tel)}) ON DUPLICATE KEY UPDATE nom = {$db->esc($this->nom)}, tel = {$db->esc($this->tel)}";
         $db->xeq($req);
         $this->id_client = $this->id_client ?: $db->pk();
     }

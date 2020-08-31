@@ -26,44 +26,63 @@ input#champTel {
 
 }
 
-input#champTable {
-    width: 60px;
+input#bouton_submit {
+    width: 45px;
 }
 
 div.alert {
     cursor: pointer;
 }
 
-div#ajoutResa {
-    cursor: pointer;
+form button i {
+    font-size: 25px;
 }
 
-button i {
-    font-size: 30px;
+i {
+    font-size: 25px;
 }
 
-span i {
-    padding-right: 15px;
+i.form {
+    font-size: 20px;
 }
 
 header div i {
     font-size : 30px;
 }
 
-
-
-@media screen and (max-width: 883px) {
-    div.row.mt-3 {
-        width: 298px;
-    }
-
-    label {
-        display: inline-block;
-        width: 80px;
-    }
-
-    input {
-        display: inline-block;
-    }
-
+span.badge {
+    cursor: pointer;
 }
+
+.erreur{
+    width: 100%;
+    margin: 0 0 0 10px;
+    color: red;
+}
+
+
+
+/* Css historique */
+
+input[type="date"] {
+    width: 170px;
+}
+
+div.card.histo {
+    cursor: pointer;
+}
+
+/* Css réservation */
+
+form {
+    display: inline;
+}
+
+@media screen and (max-width: 700px) {
+    input#bouton_decalage {
+        margin-bottom: 20px;
+    }
+}
+
+
+

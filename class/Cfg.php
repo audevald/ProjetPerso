@@ -10,11 +10,12 @@ class Cfg {
     const APP_TITRE = "Réservation";
 
     // DB
-    const DB_NAME = 'reservation';
-    const DB_LOG = 'root';
-    const DB_MDP = '';
+    const SERVEUR_NAME = 'audevaldihresa.mysql.db';
+    const DB_NAME = 'audevaldihresa';
+    const DB_LOG = 'audevaldihresa';
+    const DB_MDP = 'Reservation2019';
     // Session
-    const SESSION_TIMEOUT = 20; // s
+    const SESSION_TIMEOUT = 18000; // s
 
     private function __construct() {
         // Classe 100% statique.
@@ -30,7 +31,7 @@ class Cfg {
             });
 
         // DSN DB
-        DBMySQL::setDSN(self::DB_NAME, self::DB_LOG, self::DB_MDP);
+        DBMySQL::setDSN(self::DB_NAME, self::DB_LOG, self::DB_MDP, self::SERVEUR_NAME);
         // Session
         Session::getInstance(self::SESSION_TIMEOUT);
         // Init Done
