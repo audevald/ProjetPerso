@@ -4,7 +4,7 @@ Dans le cadre de ma formation Concepteur Développeur d'application, j'ai dével
 
 ## Découverte de l'application
 
-Pour découvrir l'application vous pouvez vous rendre à l'adresse https://audevald.fr/app
+Pour découvrir l'application vous pouvez vous rendre à l'adresse https://audevald.fr/works/app
 
 Vous aurez alors le choix d'aller sur le formulaire client pour passer une réservation ou sur le back office pour la gestion des réservations.
 
